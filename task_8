@@ -1,0 +1,57 @@
+1) Explain what AWS is?
+AWS stands for Amazon Web Service; it is a collection of remote computing services also known as a cloud computing platform.  This new realm of cloud computing is also known as IaaS or Infrastructure as a Service.
+
+2) Mention what the key components of AWS are?
+The key components of AWS are
+
+Route 53: A DNS web service
+Simple E-mail Service: It allows sending e-mail using RESTFUL API call or via regular SMTP
+Identity and Access Management: It provides enhanced security and identity management for your AWS account
+Simple Storage Device or (S3): It is a storage device and the most widely used AWS service
+Elastic Compute Cloud (EC2): It provides on-demand computing resources for hosting applications. It is handy in case of unpredictable workloads
+Elastic Block Store (EBS): It offers persistent storage volumes that attach to EC2 to allow you to persist data past the lifespan of a single Amazon EC2 instance
+CloudWatch: To monitor AWS resources, It allows administrators to view and collect keys. Also, one can set a notification alarm in case of trouble.
+3) Explain what S3 is?
+S3 stands for Simple Storage Service. You can use the S3 interface to store and retrieve any amount of data, at any time and from anywhere on the web.  For S3, the payment model is “pay as you go.”
+
+4) What is AMI?
+AMI stands for Amazon Machine Image.  It’s a template that provides the information (an operating system, an application server, and applications) required to launch an instance, which is a copy of the AMI running as a virtual server in the cloud.  You can launch instances from as many different AMIs as you need.
+
+
+
+
+
+5) Mention what the relationship between an instance and AMI is?
+From a single AMI, you can launch multiple types of instances.  An instance type defines the hardware of the host computer used for your instance. Each instance type provides different computer and memory capabilities.  Once you launch an instance, it looks like a traditional host, and we can interact with it as we would with any computer.
+
+AWS Interview Questions
+AWS Interview Questions
+6) What does an AMI include?
+An AMI includes the following things
+
+A template for the root volume for the instance
+Launch permissions decide which AWS accounts can avail the AMI to launch instances
+A block device mapping that determines the volumes to attach to the instance when it is launched
+7) How can you send a request to Amazon S3?
+Amazon S3 is a REST service, and you can send a request by using the REST API or the AWS SDK wrapper libraries that wrap the underlying Amazon S3 REST API.
+
+8) Mention what the difference between Amazon S3 and EC2 is?
+The difference between EC2 and Amazon S3 is that
+
+EC2	S3
+It is a cloud web service used for hosting your application	It is a data storage system where any amount of data can be stored
+It is like a huge computer machine which can run either Linux or Windows and can handle applications like PHP, Python, Apache, or any databases	It has a REST interface and uses secure HMAC-SHA1 authentication keys
+9) How many buckets can you create in AWS by default?
+By default, you can create up to 100 buckets in each of your AWS accounts.
+
+10) Explain can you vertically scale an Amazon instance? How?
+Yes, you can vertically scale on the Amazon instance. For that
+
+Spin up a new larger instance than the one you are currently running
+Pause that instance and detach the root webs volume from the server and discard
+Then stop your live instance and detach its root volume
+Note the unique device ID and attach that root volume to your new server
+And start it again:
+
+
+
